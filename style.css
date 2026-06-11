@@ -1,1 +1,507 @@
+/* --- Root Variables for the Theme --- */
+:root {
+    --bg-color: #0a0a0a;
+    --card-bg: #121212;
+    --text-main: #e0e0e0;
+    --text-muted: #888888;
+    --accent-crimson: #8b0000;
+}
+
+/* --- Base Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--text-main);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-crimson);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: transparent;
+    color: var(--accent-crimson);
+    text-decoration: none;
+    border: 1px solid var(--accent-crimson);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-crimson);
+    color: var(--text-main);
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+}
+/* --- Root Variables for the Theme --- */
+:root {
+    --bg-color: #0a0a0a;
+    --card-bg: #121212;
+    --text-main: #e0e0e0;
+    --text-muted: #888888;
+    --accent-crimson: #8b0000;
+}
+
+/* --- Base Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--text-main);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-crimson);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: transparent;
+    color: var(--accent-crimson);
+    text-decoration: none;
+    border: 1px solid var(--accent-crimson);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-crimson);
+    color: var(--text-main);
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+}
+
+/* --- The Three Tenets --- */
+.tenets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tenet-card {
+    background-color: var(--card-bg);
+    padding: 50px 30px;
+    text-align: center;
+    border-top: 2px solid #222;
+    transition: border-top-color 0.4s ease, transform 0.4s ease;
+}
+
+.tenet-card:hover {
+    border-top-color: var(--accent-crimson);
+    transform: translateY(-5px);
+}
+
+.tenet-card h2 {
+    color: var(--accent-crimson);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.tenet-card p {
+    color: var(--text-muted);
+}
+
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #222;
+}
+
+.page-header h1 {
+    color: var(--accent-crimson);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* --- About Page: Lore & Skills --- */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.lore h2, .skills h2 {
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-crimson);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #222;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: var(--accent-crimson);
+    box-shadow: 0 0 10px var(--accent-crimson);
+}
+
+/* --- Contact Page: Themed Form --- */
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.scroll-form {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border: 1px solid #222;
+    border-top: 3px solid var(--accent-crimson);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    color: var(--text-main);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-crimson);
+}
+
+.scroll-form .btn {
+    width: 100%;
+    cursor: pointer;
+    background-color: #1a0000;
+}
+/* --- Team Members Section --- */
+.team-section {
+    max-width: 1000px;
+    margin: 40px auto 80px; 
+    padding: 0 30px;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--accent-crimson);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.member-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member-list li {
+    background-color: var(--card-bg);
+    padding: 15px 25px;
+    border: 1px solid #222;
+    border-left: 3px solid var(--accent-crimson);
+    color: var(--text-main);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.member-list li:hover {
+    transform: translateX(5px);
+    box-shadow: -2px 2px 10px rgba(139, 0, 0, 0.2);
+}
+
+.member-num {
+    color: var(--accent-crimson);
+    margin-right: 10px;
+    font-weight: bold;
+  }
+/* --- The Three Tenets --- */
+.tenets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tenet-card {
+    background-color: var(--card-bg);
+    padding: 50px 30px;
+    text-align: center;
+    border-top: 2px solid #222;
+    transition: border-top-color 0.4s ease, transform 0.4s ease;
+}
+
+.tenet-card:hover {
+    border-top-color: var(--accent-crimson);
+    transform: translateY(-5px);
+}
+
+.tenet-card h2 {
+    color: var(--accent-crimson);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.tenet-card p {
+    color: var(--text-muted);
+}
+
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #222;
+}
+
+.page-header h1 {
+    color: var(--accent-crimson);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* --- About Page: Lore & Skills --- */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.lore h2, .skills h2 {
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-crimson);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #222;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: var(--accent-crimson);
 

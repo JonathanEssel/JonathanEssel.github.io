@@ -1,6 +1,9 @@
 # Shinobi_Project
+
 cloud computing group project 1
 
+**Bsc. Computer Science(Cybersecurity option) 
+Group C**
 
 ## Group members:
 - Solomon Adu Atefoe - 2425404069(Group Leader)

@@ -1,4 +1,3 @@
-/* --- Root Variables for the Theme --- */
 :root {
     --bg-color: #0a0a0a;
     --card-bg: #121212;
@@ -7,7 +6,6 @@
     --accent-crimson: #8b0000;
 }
 
-/* --- Base Reset --- */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- Navigation --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,7 +54,6 @@ body {
     color: var(--accent-crimson);
 }
 
-/* --- Hero Section --- */
 .hero {
     height: 70vh;
     background-size: cover;
@@ -101,7 +97,6 @@ body {
     color: var(--text-main);
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
 }
-/* --- Root Variables for the Theme --- */
 :root {
     --bg-color: #0a0a0a;
     --card-bg: #121212;
@@ -110,7 +105,6 @@ body {
     --accent-crimson: #8b0000;
 }
 
-/* --- Base Reset --- */
 * {
     margin: 0;
     padding: 0;
@@ -124,7 +118,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- Navigation --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -160,7 +153,6 @@ body {
     color: var(--accent-crimson);
 }
 
-/* --- Hero Section --- */
 .hero {
     height: 70vh;
     background-size: cover;
@@ -205,7 +197,6 @@ body {
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
 }
 
-/* --- The Three Tenets --- */
 .tenets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -260,7 +251,6 @@ body {
     font-style: italic;
 }
 
-/* --- About Page: Lore & Skills --- */
 .about-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -307,7 +297,6 @@ body {
     box-shadow: 0 0 10px var(--accent-crimson);
 }
 
-/* --- Contact Page: Themed Form --- */
 .contact-section {
     max-width: 600px;
     margin: 60px auto;
@@ -356,7 +345,6 @@ body {
     cursor: pointer;
     background-color: #1a0000;
 }
-/* --- Team Members Section --- */
 .team-section {
     max-width: 1000px;
     margin: 40px auto 80px; 
@@ -405,7 +393,6 @@ body {
     margin-right: 10px;
     font-weight: bold;
   }
-/* --- The Three Tenets --- */
 .tenets {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -460,7 +447,6 @@ body {
     font-style: italic;
 }
 
-/* --- About Page: Lore & Skills --- */
 .about-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
